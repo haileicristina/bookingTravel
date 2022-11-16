@@ -1,0 +1,45 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+}
+.box li{
+    display: flex;
+    flex-direction: column;
+    background: #ddd;
+    border-radius: 4px;
+    padding: 13px;
+}
+.box img{
+    max-width: 300px;
+    margin: 0 auto;
+    max-height: 200px;
+    border-radius: 4px;
+}
+.box strong{
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+    margin-top: 10px;
+}
+.box button{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    
+}
+.box button:hover{
+    background: orange;
+}
+.box button div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
