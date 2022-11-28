@@ -3,14 +3,17 @@ import { useDispatch } from 'react-redux';
 import{useState, useEffect} from 'react';
 
 import api from '../../services/api';
-import {addReserve} from '../../store/modules/reserve/actions';
+import {addReserveRequest} from '../../store/modules/reserve/actions';
 import {MdFlightTakeoff} from 'react-icons/md';
 import './styles.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function Home() {
 
     const [trips, setTrips] = useState([]);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     useEffect(() =>{
         async function loadApi(){
@@ -23,10 +26,14 @@ function Home() {
     },[]);
 
 
-    function handleAdd(trip){
-        dispatch(addReserve(trip))
+    function handleAdd(id){
+        dispatch(addReserveRequest(id))
+        function handleTimerReservas(){
+            navigate('/reservas')
+        }
+        setTimeout(handleTimerReservas, 5000)
     }
-
+   
 
     return (
         <div>
@@ -39,12 +46,14 @@ function Home() {
 
                         <button
                         type='button'
-                        onClick={() => handleAdd(trip)}
+                        onClick={() => handleAdd(trip.id)}
                         >
                         <div>
                             <MdFlightTakeoff size={16} color='#fff'/>
                         </div>
-                       <span>Reservar Travel</span>
+                     
+                        <span>Reservar Travel</span>
+                      
                         </button>
                    </li>
                 ))}
