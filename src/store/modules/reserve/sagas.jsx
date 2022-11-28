@@ -1,10 +1,8 @@
-import { push } from '@lagunovsky/redux-react-router';
-
 import {select, call, put, all, takeLatest} from 'redux-saga/effects';
 import api from '../../../services/api';
 import history from '../../../services/history';
 import { addReserveSuccess, updateAmountSuccess } from './actions';
-//import {useNavigate} from 'react-router-dom';
+
 
 function* addToReserve({id}){
     
