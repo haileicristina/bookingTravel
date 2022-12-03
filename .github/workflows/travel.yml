@@ -24,8 +24,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          # Build and test the project, then
-          # deploy to Azure Web App.
           npm install
           npm run build --if-present
         working-directory: bookingTravel
