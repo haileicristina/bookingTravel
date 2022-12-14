@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div>
       <Provider store={store}>
-        <Router  history={history}>
+        <Router  history={history} basename="/bookingTravel">
           <Header />
           <RoutesApp/>
         </Router>
