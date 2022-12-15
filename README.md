@@ -30,7 +30,7 @@
 **Criar API Fake em dev**
 - ``npm i -g json-server``
 
-**Rodar API Fake no terminal**
+**Rodar API Fake no terminal (provisóriamente)**
 - ``json-server server.json -p 3333``
 
 **Instalar o Axios**
@@ -50,6 +50,15 @@
 
 **Instalar o history**
 - ``npm i history``
+
+**Instalar o Heroku**
+- ``npm install -g heroku``
+
+**Executar servidor**
+- ``npm start``
+
+**Executar frontend**
+- ``npm run dev``
 
 ## 📁 Acesso ao projeto
 Acesse os arquivos do projeto [aqui](https://haileicristina.github.io/bookingTravel/)
