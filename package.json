@@ -2,6 +2,10 @@
   "name": "bookingtravel",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "type": "commonjs",
   "homepage": "https://haileicristina.github.io/bookingTravel/",
   "scripts": {
